@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_VERSION: 3.10
+  PYTHON_VERSION: "3.10"
   AWS_REGION: us-east-1
   EKS_CLUSTER_NAME: cluster
   ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_BACKEND }}
