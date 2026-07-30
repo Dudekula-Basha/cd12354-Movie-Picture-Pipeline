@@ -63,8 +63,9 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: CI=true npm test 
-
+        env:
+          FAIL_TEST: true
+        run: CI=true npm test
   build:
     runs-on: ubuntu-latest
     needs: [lint, test]
