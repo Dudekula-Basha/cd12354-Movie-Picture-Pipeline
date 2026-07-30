@@ -69,6 +69,8 @@ jobs:
         run: pipenv install --dev
 
       - name: Run tests
+        env:
+          FAIL_TEST: true
         run: pipenv run test
 
   build:
